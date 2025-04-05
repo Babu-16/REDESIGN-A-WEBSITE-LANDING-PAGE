@@ -44,6 +44,6 @@ We focused on readable fonts and polished icons that pop, but don’t scream. It
 
 
 *OUTPUT*:
-
+          <img width="1470" alt="Image" src="https://github.com/user-attachments/assets/39bcc3e5-45c0-4056-8b3a-433cb37f27d1" />
 
 
