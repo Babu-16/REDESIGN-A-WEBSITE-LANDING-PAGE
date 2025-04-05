@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Header & Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1DB954;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Navigation Buttons */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    background: #191414;
+    color: #1DB954;
+    border: 2px solid #1DB954;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #1DB954;
+    color: #191414;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* CTA Button */
+.cta {
+    background: #1DB954;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: white;
+    color: #1DB954;
+}
+
+/* Feature Section */
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #222;
+    padding: 25px;
+    border-radius: 12px;
+    width: 230px;
+    text-align: center;
+    font-size: 18px;
+    transition: transform 0.3s, background 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background: #1DB954;
+    color: #191414;
+}
+
+/* Login Button */
+#login {
+    background: #1DB954; /* Default green */
+    color: white; /* White text */
+    border: none;
+    width: 100px; /* Larger button */
+    height: 45px;
+    border-radius: 25px; /* Smooth pill shape */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover Effect */
+#login:hover {
+    background: white; /* Changes to white */
+    color: #1DB954; /* Text turns green */
+    border: 2px solid #1DB954;
+    transform: scale(1.1); /* Slightly enlarges */
+}
+
+
+
+/* Cursor Effect */
+.ripple {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background: rgba(30, 215, 96, 0.6);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #191414;
+}
+
+/* Background Canvas */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
